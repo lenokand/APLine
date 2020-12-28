@@ -64,6 +64,13 @@ body{
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
+      
+        a{
+            color: #fff;
+        }
+        a:hover{
+            color:rgb(221, 216, 216);
+        }
         .menu_bar{
             display: flex;
             user-select: none;

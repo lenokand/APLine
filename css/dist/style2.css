@@ -35,6 +35,12 @@ body a {
   font-size: 18px;
   line-height: 25px;
 }
+.menu menu a {
+  color: #fff;
+}
+.menu menu a:hover {
+  color: #ddd8d8;
+}
 .menu menu .menu_bar {
   display: flex;
   user-select: none;
