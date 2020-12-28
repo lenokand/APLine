@@ -1,0 +1,90 @@
+body{
+    font-family: Paytone One,Segoe UI ;
+    background-color: #C4C4C4;
+    font-size: 16px;
+    color: #FFF;
+    margin: 0;
+
+  
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.top{
+    background-image: url(/image/cup.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top:15px ;
+    background-size:contain;
+}
+menu{
+    display: flex;
+    justify-content: start;
+    padding: 0;
+    margin-bottom: 80px;
+    font-family: 'Paytone One', sans-serif;
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+
+
+    
+
+}
+.menu_bar{
+    display: flex;
+    user-select: none;
+}
+.menu_item{
+    display: inline-block ;
+    padding: 15px;
+}
+.logo{
+    padding: 15px 55px;
+}
+
+
+/* TOP */
+.top .container{
+    padding: 160px 65px 0;
+    margin-top: ;
+}
+
+
+
+
+/* FORM */
+
+.email_submit{
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-family: Pavanam;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+
+
+color: rgba(255, 255, 255, 0.4);
+
+}
+.button_submit{
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #FF1640;
+    box-sizing: border-box;
+    border-radius: 50px;
+
+    font-family: Pavanam;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.4);
+    }

@@ -1,0 +1,660 @@
+.review .container .rev-third p, .review .container .rev-second p, .review .container .rev-first p {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 149.8%;
+  color: #000000;
+  margin: 0;
+}
+
+body {
+  font-family: Paytone One, Segoe UI;
+  font-size: 16px;
+  color: #FFF;
+  margin: 0;
+  box-sizing: border-box;
+  background: url(../../image/cup.png) top no-repeat, url(../../image/background2.png) repeat-y #6e6c6c center;
+}
+body a {
+  text-decoration: none;
+}
+
+.menu .container {
+  max-width: 1400px;
+  margin: auto;
+}
+.menu menu {
+  display: flex;
+  justify-content: start;
+  padding: 0;
+  margin-bottom: 80px;
+  font-family: "Paytone One", sans-serif;
+  /* font-style: normal; */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.menu menu .menu_bar {
+  display: flex;
+  user-select: none;
+  white-space: nowrap;
+}
+.menu menu .menu_bar .menu_item {
+  display: inline-block;
+  padding: 15px;
+}
+.menu menu .menu_bar .logo {
+  padding: 15px 55px;
+}
+
+.center-info {
+  background: linear-gradient(180deg, rgba(50, 42, 39, 0) 0%, rgba(45, 40, 40, 0.85) 33.85%, #2D2828 49.48%, #2D2828 68.75%, #2D2828 82.29%, #2D2828 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  box-shadow: -15px 0px 15px rgba(0, 0, 0, 0.3);
+  max-width: 994px;
+  margin: 0 auto 50px;
+}
+
+.top {
+  background-position: center top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+.top .container {
+  padding: 76px 65px 0;
+  margin: auto;
+}
+.top .container .top-text {
+  display: flex;
+  flex-direction: column;
+}
+.top .container .top-text .submenu {
+  max-width: 430px;
+}
+.top .container .top-text .submenu h1 {
+  font-family: Paytone One;
+  font-size: 64px;
+  line-height: 89px;
+  color: #FFFFFF;
+  margin: 15px 0;
+}
+.top .container .top-text .submenu h2 {
+  font-family: Paytone One;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+.top .container .top-text .submenu p {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 149.8%;
+  /* or 27px */
+  color: #FFFFFF;
+}
+.top .container .top-text form {
+  display: flex;
+  align-items: stretch;
+  margin: 15px 0 60px;
+}
+.top .container .top-text form .button_submit, .top .container .top-text form .email_submit {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 50px;
+  font-family: Pavanam;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.top .container .top-text form .email_submit {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  margin-right: 20px;
+  padding: 8px 30px;
+  flex-grow: 3;
+}
+.top .container .top-text form .email_submit:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+.top .container .top-text form .button_submit {
+  border: 2px solid #FF1640;
+  padding: 0 15px;
+  flex-grow: 1;
+}
+.top .container .top-text form .button_submit:hover {
+  border: 2px solid #e75973;
+}
+
+.social {
+  padding: 30px 65px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.social .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social .container img:hover {
+  color: #2D2828;
+}
+
+.photo {
+  padding: 145px 65px 60px;
+}
+.photo .container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+}
+.photo .container img {
+  width: 292.91px;
+  background: linear-gradient(180.1deg, rgba(44, 40, 40, 0) 0.09%, rgba(44, 40, 40, 0.5) 55.06%, rgba(44, 40, 40, 0.664052) 100.46%, #2C2828 148.14%), url(workfromhome_new.jpg);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(-10px 15px 10px rgba(0, 0, 0, 0.25));
+}
+.photo .container .photo-top {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40px;
+}
+
+.marketing {
+  margin-bottom: 60px;
+}
+.marketing .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marketing .container .marketing-left {
+  font-family: Paytone One;
+  font-size: 25px;
+  line-height: 35px;
+  margin: 0 6px;
+}
+.marketing .container .marketing-line {
+  min-width: 230px;
+  border-bottom: rgba(255, 255, 255, 0.5) dashed 2px;
+}
+.marketing .container img {
+  margin: 0 6px;
+}
+.marketing .container .marketing-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #864A23 0%, #6A3A1B 100%);
+  border-radius: 20px;
+  width: 142px;
+  height: 27px;
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 149.8%;
+}
+.marketing .container .marketing-button a {
+  color: #FFFFFF;
+}
+
+.notification {
+  padding: 0 65px;
+}
+.notification .notification-ferst-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.notification .notification-ferst-card .notification-left {
+  min-width: 450px;
+}
+.notification .notification-ferst-card .notification-left-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.notification .notification-ferst-card .notification-left-top .notification-number {
+  display: flex;
+  align-items: center;
+}
+.notification .notification-ferst-card .notification-left-top .notification-number p {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 149.8%;
+  margin: 0;
+}
+.notification .notification-ferst-card .notification-left-top .notification-radio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 15px 4px 7px;
+  background: url(../../image/background-small.png), #C4C4C4;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 149.8%;
+  color: #2D2828;
+}
+.notification .notification-ferst-card .notification-left-top .notification-radio p {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+.notification .notification-ferst-card .notification-left-top .notification-radio .radio-circle {
+  margin-right: 6px;
+  width: 25.62px;
+  height: 25px;
+  border: 2px solid #2D2828;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notification .notification-ferst-card .notification-left-top .notification-radio .radio-circle .radio-circle-min {
+  border: 2px solid #2D2828;
+  border-radius: 50%;
+  width: 7.69px;
+  height: 7.5px;
+}
+.notification .notification-ferst-card .notification-left-top .number-circle {
+  background: #FF1640;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 149.8%;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.notification .notification-ferst-card .notification-left-top .number-circle p {
+  margin: 0;
+}
+.notification .notification-ferst-card .notification-left-bottom {
+  background-image: url(../../image/background-small.png);
+  padding: 15px 0 0 15px;
+}
+.notification .notification-ferst-card .notification-left-bottom .notif-user {
+  display: flex;
+  align-items: flex-start;
+}
+.notification .notification-ferst-card .notification-left-bottom .notif-user .avatar {
+  position: relative;
+  margin-right: 15px;
+}
+.notification .notification-ferst-card .notification-left-bottom .notif-user .avatar .favicon {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+}
+.notification .notification-ferst-card .notification-left-bottom .notif-user .avatar-data .avatar-name {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 149.8%;
+  color: #2D2828;
+}
+.notification .notification-ferst-card .notification-left-bottom .notif-user .avatar-data .avatar-status {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 149.8%;
+  color: rgba(45, 40, 40, 0.7);
+}
+.notification .notification-ferst-card .notification-left-bottom .notif-user .user-info {
+  max-width: 251px;
+  padding: 12px 26px 23px 26px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  color: #2D2828;
+  line-height: 149.8%;
+}
+.notification .notification-ferst-card .notification-left-bottom .notif-user .user-info h2 {
+  margin: 0 0 15px;
+  font-weight: bold;
+  font-size: 22px;
+}
+.notification .notification-ferst-card .notification-left-bottom .notif-user .user-info p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+}
+.notification .notification-ferst-card .notification-right {
+  max-width: 304px;
+  padding: 60px 0 0;
+  font-style: normal;
+  line-height: 149.8%;
+  color: #FFFFFF;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  opacity: 0.7;
+}
+.notification .notification-ferst-card .notification-right h2 {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0;
+}
+.notification .notification-ferst-card .notification-right p {
+  margin: 25px 0 0;
+  font-weight: normal;
+  font-size: 14px;
+}
+.notification .notification-second-card {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+.notification .notification-second-card .notification-left .notification-left-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.notification .notification-second-card .notification-left .notification-left-top .notification-title {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 149.8%;
+  color: #FFFFFF;
+}
+.notification .notification-second-card .notification-left .notification-left-top .notification-title p {
+  margin: 0;
+}
+.notification .notification-second-card .notification-left .notification-left-top .notification-switcher {
+  background: url(../../image/background-small.png), #C4C4C4;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 5px 3px 15px;
+}
+.notification .notification-second-card .notification-left .notification-left-top .notification-switcher p {
+  margin: 0;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 149.8%;
+  color: #2D2828;
+}
+.notification .notification-second-card .notification-left .notification-left-top .notification-switcher .switcher input {
+  display: none;
+}
+.notification .notification-second-card .notification-left .notification-left-top .notification-switcher .switcher div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 1px;
+}
+.notification .notification-second-card .notification-left .notification-left-top .notification-switcher .switcher > input + div {
+  width: 48px;
+  height: 29px;
+  border-radius: 50px;
+  background: #FF1640;
+  box-shadow: inset rgba(0, 0, 0, 0.2) 0 0 0.3em;
+  transition: 250ms ease;
+  margin-left: 8px;
+}
+.notification .notification-second-card .notification-left .notification-left-top .notification-switcher .switcher > input + div::after {
+  display: block;
+  content: "";
+  width: 27px;
+  height: 27px;
+  border-radius: 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+}
+.notification .notification-second-card .notification-left .notification-left-top .notification-switcher .switcher > input:checked + div {
+  background-color: #aed6ab;
+}
+.notification .notification-second-card .notification-left .notification-left-top .notification-switcher .switcher > input:checked + div::after {
+  transform: translateX(-16px);
+}
+.notification .notification-second-card .notification-left .notification-left-bottom {
+  background-image: url(../../image/background-small.png);
+  padding: 15px 0 0 15px;
+  max-width: 454px;
+}
+.notification .notification-second-card .notification-left .notification-left-bottom .notif-user {
+  display: flex;
+  align-items: flex-start;
+}
+.notification .notification-second-card .notification-left .notification-left-bottom .notif-user .avatar {
+  position: relative;
+  margin-right: 15px;
+}
+.notification .notification-second-card .notification-left .notification-left-bottom .notif-user .avatar .favicon {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+}
+.notification .notification-second-card .notification-left .notification-left-bottom .notif-user .avatar-data .avatar-name {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 149.8%;
+  color: #2D2828;
+}
+.notification .notification-second-card .notification-left .notification-left-bottom .notif-user .avatar-data .avatar-status {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 149.8%;
+  color: rgba(45, 40, 40, 0.7);
+}
+.notification .notification-second-card .notification-left .notification-left-bottom .notif-user .user-info {
+  max-width: 251px;
+  padding: 12px 26px 23px 19px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  color: #2D2828;
+  line-height: 149.8%;
+}
+.notification .notification-second-card .notification-left .notification-left-bottom .notif-user .user-info h2 {
+  margin: 0 0 15px;
+  font-weight: bold;
+  font-size: 22px;
+}
+.notification .notification-second-card .notification-left .notification-left-bottom .notif-user .user-info p {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+}
+.notification .notification-second-card .notification-right {
+  max-width: 304px;
+  padding: 60px 0 0;
+  font-style: normal;
+  line-height: 149.8%;
+  color: #FFFFFF;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  opacity: 0.7;
+}
+.notification .notification-second-card .notification-right h2 {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0;
+}
+.notification .notification-second-card .notification-right p {
+  margin: 25px 0 0;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.partners {
+  max-width: 994px;
+  margin: 0 auto;
+}
+.partners .container {
+  padding: 0 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review {
+  max-width: 994px;
+  margin: 0 auto 115px;
+}
+.review .container {
+  padding: 0 66px;
+  display: flex;
+  justify-content: space-between;
+}
+.review .container .rev-avatar {
+  max-width: 90px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.review .container .rev-avatar img {
+  margin-right: 15px;
+}
+.review .container .rev-first {
+  flex-basis: 32%;
+}
+.review .container .rev-second {
+  flex-basis: 32%;
+}
+.review .container .rev-third {
+  flex-basis: 32%;
+}
+footer {
+  background-image: url(../../image/footerbg.png);
+  padding: 60px 0;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: auto;
+}
+footer .container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 105px;
+}
+footer .container a {
+  color: #fff;
+}
+footer .container a:hover {
+  color: #ddd8d8;
+}
+footer .container .footer-left {
+  padding-left: 60px;
+  max-width: 738px;
+  display: flex;
+}
+footer .container .footer-left .footer-logo {
+  width: 300px;
+  margin-top: -15px;
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 63px;
+  color: #FFFFFF;
+}
+footer .container .footer-left .footer-logo p {
+  margin: 0;
+}
+footer .container .footer-left .navigation {
+  width: 465px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .container .footer-left .navigation h3 {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 149.8%;
+  margin-top: 0;
+  /* identical to box height, or 27px */
+}
+footer .container .footer-left .navigation p {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 149.8%;
+}
+footer .container .footer-left .navigation .explore {
+  flex-basis: 32%;
+}
+footer .container .footer-left .navigation .recources {
+  flex-basis: 32%;
+}
+footer .container .footer-left .navigation .company {
+  flex-basis: 32%;
+}
+footer .container .footer-right {
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 149.8%;
+  color: #FFFFFF;
+  padding-right: 60px;
+}
+footer .container .footer-right .social-liks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 149.8%;
+  text-align: right;
+  color: #FFFFFF;
+}
+footer .container .footer-right .social-liks .social-icon {
+  display: flex;
+  font-size: 20px;
+  width: 140px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+footer .thanks {
+  padding: 15px 22px;
+  margin: auto;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  text-align: center;
+}
+footer .thanks p {
+  margin: 0;
+  font-family: Paytone One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 39px;
+  color: #000000;
+}
+
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot");
+  src: url("../fonts/SegoeUIRegular/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
