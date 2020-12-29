@@ -25,6 +25,7 @@ body a {
   margin: auto;
 }
 .menu menu {
+  position: relative;
   display: flex;
   justify-content: start;
   padding: 0;
@@ -34,6 +35,78 @@ body a {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+}
+@media screen and (max-width: 768px) {
+  .menu menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.menu menu .burger-menu {
+  display: none;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #FF1640;
+  border-radius: 5px;
+  border: 0;
+  box-shadow: 0;
+}
+@media screen and (max-width: 768px) {
+  .menu menu .burger-menu {
+    margin: 30px;
+    display: block;
+  }
+}
+.menu menu .burger-menu span {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: #fff;
+  left: 9px;
+  border-radius: 5px;
+  transition: 200ms ease;
+}
+.menu menu .burger-menu span:first-child {
+  top: 10px;
+}
+.menu menu .burger-menu span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu menu .burger-menu span:last-child {
+  bottom: 10px;
+}
+.menu menu .burger-menu.open {
+  z-index: 9999;
+  left: 80%;
+}
+.menu menu .burger-menu.open span:nth-child(2) {
+  transform: scaleX(0);
+}
+.menu menu .burger-menu.open span:first-child {
+  transform: rotate(45deg);
+  top: 30px;
+}
+.menu menu .burger-menu.open span:last-child {
+  transform: rotate(-45deg);
+  top: 30px;
+}
+.menu menu #shadow {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.884);
+  z-index: 9998;
+}
+@media screen and (max-width: 768px) {
+  .menu menu #shadow.open {
+    display: block;
+  }
 }
 .menu menu a {
   color: #fff;
@@ -46,12 +119,30 @@ body a {
   user-select: none;
   white-space: nowrap;
 }
+@media screen and (max-width: 768px) {
+  .menu menu .menu_bar {
+    flex-direction: column;
+    padding: 30px;
+    position: absolute;
+    transition: 300ms ease;
+    z-index: 9999;
+    left: -260px;
+  }
+  .menu menu .menu_bar.open {
+    left: 0;
+  }
+}
 .menu menu .menu_bar .menu_item {
   display: inline-block;
   padding: 15px;
 }
 .menu menu .menu_bar .logo {
   padding: 15px 55px;
+}
+@media screen and (max-width: 768px) {
+  .menu menu .menu_bar .logo {
+    padding: 0;
+  }
 }
 
 .center-info {
@@ -107,6 +198,12 @@ body a {
   align-items: stretch;
   margin: 15px 0 60px;
 }
+@media screen and (max-width: 576px) {
+  .top .container .top-text form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .top .container .top-text form .button_submit, .top .container .top-text form .email_submit {
   background-color: rgba(255, 255, 255, 0);
   border-radius: 50px;
@@ -123,6 +220,11 @@ body a {
   padding: 8px 30px;
   flex-grow: 3;
 }
+@media screen and (max-width: 576px) {
+  .top .container .top-text form .email_submit {
+    margin-bottom: 30px;
+  }
+}
 .top .container .top-text form .email_submit:hover {
   border: 2px solid rgba(255, 255, 255, 0.6);
 }
@@ -131,18 +233,27 @@ body a {
   padding: 0 15px;
   flex-grow: 1;
 }
+@media screen and (max-width: 576px) {
+  .top .container .top-text form .button_submit {
+    height: 38px;
+  }
+}
 .top .container .top-text form .button_submit:hover {
   border: 2px solid #e75973;
 }
 
 .social {
-  padding: 30px 65px 0;
+  padding: 30px 35px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .social .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+.social .container img {
+  margin: 0 30px;
 }
 .social .container img:hover {
   color: #2D2828;
@@ -163,6 +274,11 @@ body a {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(-10px 15px 10px rgba(0, 0, 0, 0.25));
 }
+@media screen and (max-width: 768px) {
+  .photo .container img {
+    width: 35vw;
+  }
+}
 .photo .container .photo-top {
   position: absolute;
   left: 50%;
@@ -178,6 +294,11 @@ body a {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 540px) {
+  .marketing .container {
+    flex-direction: column;
+  }
+}
 .marketing .container .marketing-left {
   font-family: Paytone One;
   font-size: 25px;
@@ -188,8 +309,25 @@ body a {
   min-width: 230px;
   border-bottom: rgba(255, 255, 255, 0.5) dashed 2px;
 }
+@media screen and (max-width: 768px) {
+  .marketing .container .marketing-line {
+    min-width: 20vw;
+    max-width: 230px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .marketing .container .marketing-line {
+    border-bottom: none;
+    height: 2vh;
+  }
+}
 .marketing .container img {
   margin: 0 6px;
+}
+@media screen and (max-width: 540px) {
+  .marketing .container img {
+    margin-bottom: 2vh;
+  }
 }
 .marketing .container .marketing-button {
   display: flex;
@@ -211,25 +349,58 @@ body a {
 .notification {
   padding: 0 65px;
 }
-.notification .notification-ferst-card {
+.notification .notification-right {
+  max-width: 304px;
+  padding: 60px 0 0;
+  font-style: normal;
+  line-height: 149.8%;
+  color: #FFFFFF;
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  opacity: 0.7;
+}
+@media screen and (max-width: 991px) {
+  .notification .notification-right {
+    align-self: flex-end;
+    max-width: 560px;
+    padding: 30px 0 0;
+  }
+}
+.notification .notification-right h2 {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0;
+}
+.notification .notification-right p {
+  margin: 25px 0 0;
+  font-weight: normal;
+  font-size: 14px;
+}
+@media screen and (max-width: 991px) {
+  .notification .notification-left {
+    max-width: 453px;
+  }
+}
+.notification .notification-first-card {
   display: flex;
   justify-content: space-between;
   margin-bottom: 70px;
 }
-.notification .notification-ferst-card .notification-left {
-  min-width: 450px;
+@media screen and (max-width: 991px) {
+  .notification .notification-first-card {
+    flex-direction: column;
+  }
 }
-.notification .notification-ferst-card .notification-left-top {
+.notification .notification-first-card .notification-left-top {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   margin-bottom: 25px;
 }
-.notification .notification-ferst-card .notification-left-top .notification-number {
+.notification .notification-first-card .notification-left-top .notification-number {
   display: flex;
   align-items: center;
 }
-.notification .notification-ferst-card .notification-left-top .notification-number p {
+.notification .notification-first-card .notification-left-top .notification-number p {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -237,7 +408,7 @@ body a {
   line-height: 149.8%;
   margin: 0;
 }
-.notification .notification-ferst-card .notification-left-top .notification-radio {
+.notification .notification-first-card .notification-left-top .notification-radio {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -249,11 +420,11 @@ body a {
   line-height: 149.8%;
   color: #2D2828;
 }
-.notification .notification-ferst-card .notification-left-top .notification-radio p {
+.notification .notification-first-card .notification-left-top .notification-radio p {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   margin: 0;
 }
-.notification .notification-ferst-card .notification-left-top .notification-radio .radio-circle {
+.notification .notification-first-card .notification-left-top .notification-radio .radio-circle {
   margin-right: 6px;
   width: 25.62px;
   height: 25px;
@@ -263,13 +434,13 @@ body a {
   align-items: center;
   justify-content: center;
 }
-.notification .notification-ferst-card .notification-left-top .notification-radio .radio-circle .radio-circle-min {
+.notification .notification-first-card .notification-left-top .notification-radio .radio-circle .radio-circle-min {
   border: 2px solid #2D2828;
   border-radius: 50%;
   width: 7.69px;
   height: 7.5px;
 }
-.notification .notification-ferst-card .notification-left-top .number-circle {
+.notification .notification-first-card .notification-left-top .number-circle {
   background: #FF1640;
   width: 35px;
   height: 35px;
@@ -282,27 +453,42 @@ body a {
   justify-content: center;
   margin-right: 10px;
 }
-.notification .notification-ferst-card .notification-left-top .number-circle p {
+.notification .notification-first-card .notification-left-top .number-circle p {
   margin: 0;
 }
-.notification .notification-ferst-card .notification-left-bottom {
+.notification .notification-left-bottom {
   background-image: url(../../image/background-small.png);
   padding: 15px 0 0 15px;
 }
-.notification .notification-ferst-card .notification-left-bottom .notif-user {
+@media screen and (max-width: 991px) {
+  .notification .notification-left-bottom {
+    padding: 15px;
+  }
+}
+.notification .notification-left-bottom .notif-user {
+  display: inline-block;
   display: flex;
   align-items: flex-start;
 }
-.notification .notification-ferst-card .notification-left-bottom .notif-user .avatar {
+@media screen and (max-width: 576px) {
+  .notification .notification-left-bottom .notif-user {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    width: auto;
+  }
+}
+.notification .notification-left-bottom .notif-user .avatar {
   position: relative;
   margin-right: 15px;
 }
-.notification .notification-ferst-card .notification-left-bottom .notif-user .avatar .favicon {
+.notification .notification-left-bottom .notif-user .avatar .favicon {
   position: absolute;
   right: -5px;
   bottom: -5px;
 }
-.notification .notification-ferst-card .notification-left-bottom .notif-user .avatar-data .avatar-name {
+.notification .notification-left-bottom .notif-user .avatar-data .avatar-name {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -310,7 +496,7 @@ body a {
   line-height: 149.8%;
   color: #2D2828;
 }
-.notification .notification-ferst-card .notification-left-bottom .notif-user .avatar-data .avatar-status {
+.notification .notification-left-bottom .notif-user .avatar-data .avatar-status {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -318,7 +504,7 @@ body a {
   line-height: 149.8%;
   color: rgba(45, 40, 40, 0.7);
 }
-.notification .notification-ferst-card .notification-left-bottom .notif-user .user-info {
+.notification .notification-left-bottom .notif-user .user-info {
   max-width: 251px;
   padding: 12px 26px 23px 26px;
   display: flex;
@@ -328,32 +514,18 @@ body a {
   color: #2D2828;
   line-height: 149.8%;
 }
-.notification .notification-ferst-card .notification-left-bottom .notif-user .user-info h2 {
+@media screen and (max-width: 576px) {
+  .notification .notification-left-bottom .notif-user .user-info {
+    padding: 12px 26px 23px 0px;
+  }
+}
+.notification .notification-left-bottom .notif-user .user-info h2 {
   margin: 0 0 15px;
   font-weight: bold;
   font-size: 22px;
 }
-.notification .notification-ferst-card .notification-left-bottom .notif-user .user-info p {
+.notification .notification-left-bottom .notif-user .user-info p {
   margin: 0;
-  font-weight: normal;
-  font-size: 14px;
-}
-.notification .notification-ferst-card .notification-right {
-  max-width: 304px;
-  padding: 60px 0 0;
-  font-style: normal;
-  line-height: 149.8%;
-  color: #FFFFFF;
-  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-  opacity: 0.7;
-}
-.notification .notification-ferst-card .notification-right h2 {
-  font-weight: 600;
-  font-size: 22px;
-  margin: 0;
-}
-.notification .notification-ferst-card .notification-right p {
-  margin: 25px 0 0;
   font-weight: normal;
   font-size: 14px;
 }
@@ -361,6 +533,11 @@ body a {
   display: flex;
   justify-content: space-between;
   padding-bottom: 120px;
+}
+@media screen and (max-width: 991px) {
+  .notification .notification-second-card {
+    flex-direction: column;
+  }
 }
 .notification .notification-second-card .notification-left .notification-left-top {
   display: flex;
@@ -482,35 +659,25 @@ body a {
   font-weight: normal;
   font-size: 14px;
 }
-.notification .notification-second-card .notification-right {
-  max-width: 304px;
-  padding: 60px 0 0;
-  font-style: normal;
-  line-height: 149.8%;
-  color: #FFFFFF;
-  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-  opacity: 0.7;
-}
-.notification .notification-second-card .notification-right h2 {
-  font-weight: 600;
-  font-size: 22px;
-  margin: 0;
-}
-.notification .notification-second-card .notification-right p {
-  margin: 25px 0 0;
-  font-weight: normal;
-  font-size: 14px;
-}
 
 .partners {
   max-width: 994px;
   margin: 0 auto;
 }
 .partners .container {
-  padding: 0 66px;
+  padding: 0 33px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 991px) {
+  .partners .container {
+    justify-content: center;
+  }
+}
+.partners .container img {
+  margin: 33px;
 }
 
 .review {
@@ -521,6 +688,11 @@ body a {
   padding: 0 66px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  .review .container {
+    flex-direction: column;
+  }
 }
 .review .container .rev-avatar {
   max-width: 90px;
@@ -533,9 +705,11 @@ body a {
 }
 .review .container .rev-first {
   flex-basis: 32%;
+  margin-bottom: 45px;
 }
 .review .container .rev-second {
   flex-basis: 32%;
+  margin-bottom: 45px;
 }
 .review .container .rev-third {
   flex-basis: 32%;
@@ -556,6 +730,11 @@ footer .container {
   justify-content: space-between;
   margin-bottom: 105px;
 }
+@media screen and (max-width: 1200px) {
+  footer .container {
+    flex-direction: column;
+  }
+}
 footer .container a {
   color: #fff;
 }
@@ -567,6 +746,18 @@ footer .container .footer-left {
   max-width: 738px;
   display: flex;
 }
+@media screen and (max-width: 1200px) {
+  footer .container .footer-left {
+    justify-content: space-between;
+    max-width: none;
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .container .footer-left {
+    flex-direction: column;
+  }
+}
 footer .container .footer-left .footer-logo {
   width: 300px;
   margin-top: -15px;
@@ -577,6 +768,13 @@ footer .container .footer-left .footer-logo {
   line-height: 63px;
   color: #FFFFFF;
 }
+@media screen and (max-width: 991px) {
+  footer .container .footer-left .footer-logo {
+    font-size: 35px;
+    width: 30vw;
+    margin-right: 15px;
+  }
+}
 footer .container .footer-left .footer-logo p {
   margin: 0;
 }
@@ -584,6 +782,11 @@ footer .container .footer-left .navigation {
   width: 465px;
   display: flex;
   justify-content: space-around;
+}
+@media screen and (max-width: 500px) {
+  footer .container .footer-left .navigation {
+    flex-direction: column;
+  }
 }
 footer .container .footer-left .navigation h3 {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
@@ -619,6 +822,11 @@ footer .container .footer-right {
   color: #FFFFFF;
   padding-right: 60px;
 }
+@media screen and (max-width: 1200px) {
+  footer .container .footer-right {
+    padding: 0 0 0 30px;
+  }
+}
 footer .container .footer-right .social-liks {
   display: flex;
   flex-direction: column;
@@ -630,6 +838,11 @@ footer .container .footer-right .social-liks {
   line-height: 149.8%;
   text-align: right;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1200px) {
+  footer .container .footer-right .social-liks {
+    align-items: flex-start;
+  }
 }
 footer .container .footer-right .social-liks .social-icon {
   display: flex;
@@ -658,6 +871,11 @@ footer .thanks p {
   font-size: 28px;
   line-height: 39px;
   color: #000000;
+}
+@media screen and (max-width: 576px) {
+  footer .thanks p {
+    font-size: 16px;
+  }
 }
 footer .circle-bg {
   position: absolute;
