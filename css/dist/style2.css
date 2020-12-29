@@ -20,6 +20,11 @@ body a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 375px) {
+  .menu {
+    max-width: 350px;
+  }
+}
 .menu .container {
   max-width: 1400px;
   margin: auto;
@@ -51,6 +56,7 @@ body a {
   border-radius: 5px;
   border: 0;
   box-shadow: 0;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 768px) {
   .menu menu .burger-menu {
@@ -80,7 +86,7 @@ body a {
 }
 .menu menu .burger-menu.open {
   z-index: 9999;
-  left: 80%;
+  left: 70vw;
 }
 .menu menu .burger-menu.open span:nth-child(2) {
   transform: scaleX(0);
@@ -396,6 +402,11 @@ body a {
   justify-content: space-between;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 576px) {
+  .notification .notification-first-card .notification-left-top {
+    flex-direction: column;
+  }
+}
 .notification .notification-first-card .notification-left-top .notification-number {
   display: flex;
   align-items: center;
@@ -419,6 +430,11 @@ body a {
   font-size: 16px;
   line-height: 149.8%;
   color: #2D2828;
+}
+@media screen and (max-width: 576px) {
+  .notification .notification-first-card .notification-left-top .notification-radio {
+    margin-top: 15px;
+  }
 }
 .notification .notification-first-card .notification-left-top .notification-radio p {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
@@ -544,6 +560,11 @@ body a {
   justify-content: space-between;
   margin-bottom: 25px;
 }
+@media screen and (max-width: 576px) {
+  .notification .notification-second-card .notification-left .notification-left-top {
+    flex-direction: column;
+  }
+}
 .notification .notification-second-card .notification-left .notification-left-top .notification-title {
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
@@ -562,6 +583,12 @@ body a {
   justify-content: center;
   align-items: center;
   padding: 3px 5px 3px 15px;
+}
+@media screen and (max-width: 576px) {
+  .notification .notification-second-card .notification-left .notification-left-top .notification-switcher {
+    max-width: 130px;
+    margin-top: 15px;
+  }
 }
 .notification .notification-second-card .notification-left .notification-left-top .notification-switcher p {
   margin: 0;
@@ -786,6 +813,8 @@ footer .container .footer-left .navigation {
 @media screen and (max-width: 500px) {
   footer .container .footer-left .navigation {
     flex-direction: column;
+    width: auto;
+    max-width: 250px;
   }
 }
 footer .container .footer-left .navigation h3 {

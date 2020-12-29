@@ -44,7 +44,9 @@ body{
     // background-repeat:repeat-y;
  }
 .menu{
-
+@media screen and (max-width:375px){
+    max-width: 350px;
+}
  
     
     
@@ -52,10 +54,12 @@ body{
     .container{
         max-width: 1400px;
         margin: auto;
+      
     }
   
 
     menu{
+        
         position: relative;
         display: flex;
         justify-content: start;
@@ -73,6 +77,7 @@ body{
             justify-content: space-between;
             
            }
+           
         .burger-menu{
             display: none;
             position: relative;
@@ -82,10 +87,12 @@ body{
             border-radius: 5px;
             border: 0;
             box-shadow: 0;
+            box-sizing: border-box;
             @media screen and (max-width:768px){
                 margin:30px ;
                 display: block;
                }
+               
             span{
                 position: absolute;
                 display: inline-block;
@@ -110,7 +117,7 @@ body{
             }
             &.open{
                 z-index: 9999;
-                left: 80%;
+                left: 70vw;
                 // top: 15px;
                 span{
                     &:nth-child(2){transform: scaleX(0);}
@@ -141,6 +148,7 @@ body{
                 }
                }
             
+            
         }
        
         
@@ -151,6 +159,7 @@ body{
             color:rgb(221, 216, 216);
         }
         .menu_bar{
+            
             display: flex;
             user-select: none;
             white-space: nowrap;
@@ -165,6 +174,7 @@ body{
                     left:0;   
                 }
              }
+             
             .menu_item{
                 display: inline-block ;
                 padding: 15px;
@@ -224,6 +234,7 @@ body{
                     // flex-grow: 1;
                     // flex-shrink: 10;1
                     max-width: 430px;
+                    
                     h1{
                         font-family: Paytone One;
                         font-size: 64px;
@@ -250,6 +261,7 @@ body{
                     }
                 }
                 form{
+
                     display: flex;
                     align-items: stretch;
                     margin:15px 0 60px;
@@ -259,7 +271,7 @@ body{
                         align-items:flex-start;
                         
                        }
-
+                       
                     %placeholder{
                         background-color: rgba(255, 255, 255, 0);
                         border-radius: 50px;
@@ -280,6 +292,7 @@ body{
                          @media screen and (max-width:576px){
                                 margin-bottom: 30px;
                            }
+                           
                         }
                     .email_submit:hover{
                         border: 2px solid rgba(255, 255, 255, 0.6);
@@ -293,7 +306,9 @@ body{
                        flex-grow: 1;
                        @media screen and (max-width:576px){
                         height:  38px;
+                        
                    }
+
                         }
                     .button_submit:hover{
                         border: 2px solid #e75973;
@@ -317,6 +332,7 @@ body{
     
     padding: 30px 35px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    
     .container{
         
         display: flex;
@@ -419,7 +435,7 @@ body{
             line-height: 149.8%;
 
             a {color: #FFFFFF;}
-            
+           
         }
 
 
@@ -448,6 +464,7 @@ body{
          max-width: 560px;
          padding: 30px 0 0 ;
         }
+        
         h2{
             font-weight: 600;
             font-size: 22px;
@@ -465,6 +482,7 @@ body{
         @media screen and (max-width:991px){
             max-width: 453px;
         }
+        
     }
     .notification-first-card{
         display: flex;
@@ -474,15 +492,16 @@ body{
             flex-direction: column;
         }
         
-
+        
         .notification-left-top{
             display: flex;
             align-items: baseline;
             justify-content: space-between;
             margin-bottom: 25px;
-            @media screen and (max-width:991px){
-           
+            @media screen and (max-width:576px){
+                flex-direction: column;
             }
+            
             .notification-number{
                 display: flex;
                 align-items: center;
@@ -510,6 +529,11 @@ body{
                 font-size: 16px;
                 line-height: 149.8%;
                 color: #2D2828;
+                
+                @media screen and (max-width:576px){
+                    margin-top: 15px;
+                }
+
                 p{
                     font-family: $font-segoe;
                     margin: 0;
@@ -569,6 +593,7 @@ body{
             // display: flex;
             
         }
+        
         .notif-user{
               display: inline-block;
             display: flex;
@@ -582,6 +607,7 @@ body{
                 width: auto;
                 
             }
+            
             
             .avatar{
                 position: relative;
@@ -625,6 +651,7 @@ body{
                 @media screen and (max-width:576px){
                     padding: 12px 26px 23px 0px;
                 }
+                
                 h2{
                     margin:0  0 15px;
                     font-weight: bold;
@@ -654,11 +681,15 @@ body{
         @media screen and (max-width:991px){
             flex-direction: column;
         }
+        
         .notification-left{
             .notification-left-top{
                 display: flex;
                 justify-content: space-between;
                 margin-bottom: 25px;
+                @media screen and (max-width:576px){
+                    flex-direction: column;
+                }
                 .notification-title{
                     font-family: $font-segoe;
                     font-style: normal;
@@ -679,6 +710,10 @@ body{
                     justify-content: center;
                     align-items: center;
                     padding: 3px 5px 3px 15px;
+                    @media screen and (max-width:576px){
+                        max-width: 130px;
+                        margin-top: 15px;
+                    }
                     p{
                         margin: 0;
                         font-family:$font-segoe;
@@ -809,14 +844,16 @@ body{
 
 .partners{
     
-    max-width: 994px;;
+    max-width: 994px;
     margin: 0 auto ;
+    
     .container{ 
         padding: 0 33px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        
         @media screen and (max-width:991px){
             justify-content: center;
         }
@@ -841,6 +878,8 @@ body{
         @media screen and (max-width:991px){
             flex-direction: column;
         }
+        
+
         .rev-avatar{
             max-width: 90px;
             display: flex;
@@ -889,9 +928,7 @@ footer{
     max-width: 1400px;
         margin:auto ;   
 
-        @media screen and (max-width:1200px){
-            
-        }
+        
     .container{
         max-width: 1400px;
         // margin:auto ;   
@@ -901,7 +938,9 @@ footer{
         // align-self: center;
         @media screen and (max-width:1200px){
          flex-direction: column;  
+         
         }
+        
         a{  
             color:#fff;
             
@@ -921,6 +960,7 @@ footer{
             @media screen and (max-width:576px){
                 flex-direction: column;
             }
+            
             .footer-logo{
                 width: 300px;
                 margin-top: -15px;
@@ -945,6 +985,8 @@ footer{
                 justify-content: space-around;
                 @media screen and (max-width:500px){
                     flex-direction: column;
+                    width: auto;
+                    max-width: 250px;
                 }
                 h3{
                     font-family:$font-segoe;
