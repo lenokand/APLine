@@ -14,14 +14,14 @@ body {
   color: #FFF;
   margin: 0;
   box-sizing: border-box;
-  background: url(../../image/cup.png) top/contain no-repeat, url(../../image/backgroundcol7.jpg) repeat #6e6c6c center;
+  background: url(../../image/cup.png) top/contain no-repeat, url(../../image/backgroundcol8.jpg) repeat #6e6c6c center;
 }
 body a {
   text-decoration: none;
 }
 @media screen and (max-width: 1200px) {
   body {
-    background: url(../../image/cup.png) top no-repeat, url(../../image/backgroundcol7.jpg) repeat #6e6c6c center;
+    background: url(../../image/cup.png) top no-repeat, url(../../image/backgroundcol8.jpg) repeat #6e6c6c center;
   }
 }
 
