@@ -36,12 +36,13 @@ body{
     }
 
 
-    background: url(../../image/cup.png)  top no-repeat,
-    url(../../image/background2.png) repeat-y $bg center;
-    // ,url(../../image/cup.png)  top no-repeat
-    // background-position:center;
-
-    // background-repeat:repeat-y;
+    background: url(../../image/cup.png) top/contain  no-repeat,
+    url(../../image/backgroundcol2.jpg) repeat $bg center;
+  
+    @media screen and (max-width:1200px){
+        background: url(../../image/cup.png) top  no-repeat,
+    url(../../image/backgroundcol2.jpg) repeat $bg center;
+    }
  }
 .menu{
 @media screen and (max-width:375px){
@@ -52,7 +53,7 @@ body{
     
     
     .container{
-        max-width: 1400px;
+        max-width: 1600px;
         margin: auto;
       
     }
@@ -75,7 +76,7 @@ body{
             display: flex;
             // flex-direction: column
             justify-content: space-between;
-            
+            margin-bottom: 0px;
            }
            
         .burger-menu{
@@ -224,6 +225,9 @@ body{
             // max-width: 993px;
             margin: auto;
 
+            @media screen and (max-width:576px){
+                padding: 15px 20px 0;
+               }
 
 
             .top-text{
@@ -269,7 +273,7 @@ body{
                     @media screen and (max-width:576px){
                         flex-direction: column;
                         align-items:flex-start;
-                        
+                        margin:15px 0 30px;
                        }
                        
                     %placeholder{
@@ -332,7 +336,9 @@ body{
     
     padding: 30px 35px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    
+    @media screen and (max-width:576px){
+        padding: 15px 0px 0;
+       }
     .container{
         
         display: flex;
@@ -353,6 +359,9 @@ body{
 .photo{
     
     padding: 145px 65px 60px;
+    @media screen and (max-width:576px){
+        padding: 90px 30px 30px;
+       }
     .container{
         display: flex;
         justify-content: space-between;
@@ -448,7 +457,9 @@ body{
     
     padding: 0 65px;
     // margin-bottom: 120px;
-
+    @media screen and (max-width:576px){
+        padding: 0 30px;
+       }
 
 
     .notification-right{
@@ -878,7 +889,9 @@ body{
         @media screen and (max-width:991px){
             flex-direction: column;
         }
-        
+        @media screen and (max-width:576px){
+            padding: 0 30px;
+        }
 
         .rev-avatar{
             max-width: 90px;
@@ -917,24 +930,28 @@ footer{
  
     position: relative;
     
-    background-image: url(../../image/footerbg.png  );
+    background-image: url(../../image/footerbgnew.jpg  );
     
     
     padding: 71px 0;
     display: flex;
     box-sizing: border-box;
-    // align-items: center;
+    align-items: stretch;
     flex-direction: column;
-    max-width: 1400px;
+
+    // max-width: 1600px;
         margin:auto ;   
 
         
     .container{
-        max-width: 1400px;
+        // max-width: 1600px;
         // margin:auto ;   
+        // align-self: center;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        // margin:  0 auto 105px;
         margin-bottom: 105px;
+
         // align-self: center;
         @media screen and (max-width:1200px){
          flex-direction: column;  
@@ -1072,7 +1089,7 @@ footer{
         display: flex;
         align-items: baseline;
         justify-content: center;
-        
+        border-radius: 6px;
         background: #FFFFFF;
         text-align: center;
         max-width: 410px;

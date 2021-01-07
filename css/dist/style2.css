@@ -14,10 +14,15 @@ body {
   color: #FFF;
   margin: 0;
   box-sizing: border-box;
-  background: url(../../image/cup.png) top no-repeat, url(../../image/background2.png) repeat-y #6e6c6c center;
+  background: url(../../image/cup.png) top/contain no-repeat, url(../../image/backgroundcol2.jpg) repeat #6e6c6c center;
 }
 body a {
   text-decoration: none;
+}
+@media screen and (max-width: 1200px) {
+  body {
+    background: url(../../image/cup.png) top no-repeat, url(../../image/backgroundcol2.jpg) repeat #6e6c6c center;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -26,7 +31,7 @@ body a {
   }
 }
 .menu .container {
-  max-width: 1400px;
+  max-width: 1600px;
   margin: auto;
 }
 .menu menu {
@@ -45,6 +50,7 @@ body a {
   .menu menu {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0px;
   }
 }
 .menu menu .burger-menu {
@@ -171,6 +177,11 @@ body a {
   padding: 76px 65px 0;
   margin: auto;
 }
+@media screen and (max-width: 576px) {
+  .top .container {
+    padding: 15px 20px 0;
+  }
+}
 .top .container .top-text {
   display: flex;
   flex-direction: column;
@@ -208,6 +219,7 @@ body a {
   .top .container .top-text form {
     flex-direction: column;
     align-items: flex-start;
+    margin: 15px 0 30px;
   }
 }
 .top .container .top-text form .button_submit, .top .container .top-text form .email_submit {
@@ -252,6 +264,11 @@ body a {
   padding: 30px 35px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
+@media screen and (max-width: 576px) {
+  .social {
+    padding: 15px 0px 0;
+  }
+}
 .social .container {
   display: flex;
   justify-content: center;
@@ -267,6 +284,11 @@ body a {
 
 .photo {
   padding: 145px 65px 60px;
+}
+@media screen and (max-width: 576px) {
+  .photo {
+    padding: 90px 30px 30px;
+  }
 }
 .photo .container {
   display: flex;
@@ -354,6 +376,11 @@ body a {
 
 .notification {
   padding: 0 65px;
+}
+@media screen and (max-width: 576px) {
+  .notification {
+    padding: 0 30px;
+  }
 }
 .notification .notification-right {
   max-width: 304px;
@@ -721,6 +748,11 @@ body a {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 576px) {
+  .review .container {
+    padding: 0 30px;
+  }
+}
 .review .container .rev-avatar {
   max-width: 90px;
   display: flex;
@@ -743,18 +775,17 @@ body a {
 }
 footer {
   position: relative;
-  background-image: url(../../image/footerbg.png);
+  background-image: url(../../image/footerbgnew.jpg);
   padding: 71px 0;
   display: flex;
   box-sizing: border-box;
+  align-items: stretch;
   flex-direction: column;
-  max-width: 1400px;
   margin: auto;
 }
 footer .container {
-  max-width: 1400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 105px;
 }
 @media screen and (max-width: 1200px) {
@@ -887,6 +918,7 @@ footer .thanks {
   display: flex;
   align-items: baseline;
   justify-content: center;
+  border-radius: 6px;
   background: #FFFFFF;
   text-align: center;
   max-width: 410px;
