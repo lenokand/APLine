@@ -946,7 +946,8 @@ footer .circle-bg {
   width: 136px;
   top: -67px;
   border-radius: 75px 75px 0 0;
-  background-image: url(../../image/footerbg.png);
+  background-image: url(../../image/footerbgnew.jpg);
+  background-position: top;
 }
 footer .circle-bg .cirle-middle {
   position: absolute;
