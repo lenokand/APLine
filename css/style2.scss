@@ -957,7 +957,11 @@ footer{
          flex-direction: column;  
          
         }
-        
+        @media screen and (max-width:499px){
+            justify-content: center; 
+            align-items: center; 
+            
+           }
         a{  
             color:#fff;
             
@@ -977,6 +981,11 @@ footer{
             @media screen and (max-width:576px){
                 flex-direction: column;
             }
+            @media screen and (max-width:499px){
+                padding-left: 0;
+                margin-bottom: 30px;
+                
+               }
             
             .footer-logo{
                 width: 300px;
@@ -1049,7 +1058,11 @@ footer{
             @media screen and (max-width:1200px){
                 padding: 0 0 0 30px;
             }
-
+            @media screen and (max-width:499px){
+                padding-right: 0;
+                
+                
+               }
             .social-liks{
                 display: flex;
                 flex-direction: column;
